@@ -1,0 +1,287 @@
+#contato {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+#cabecalho {
+  background-color: #e01515;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  background-color: #ff6b6b !important;
+  color: #fff !important;
+  border-radius: 25px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b !important;
+  border-radius: 25px;
+}
+
+.navbar-toggler {
+  border-color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+
+  .navbar-collapse {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  bottom: 40px;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    display: block !important;
+    padding: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 280px;
+    object-fit: cover;
+  }
+}
+.filme-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.filme-card:hover {
+  transform: scale(1.05);
+}
+
+.filme-card img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.filme-card .card-img-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.filme-card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.filme-card .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.filme-card .card-text {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.filme-card .btn-outline-light {
+  width: 100%;
+  border-width: 2px;
+}
+
+.filme-card .btn-outline-light:hover {
+  background-color: #ff0000;
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .filme-card img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .categoria-card img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .categoria-card img {
+    height: 220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .categoria-card img {
+    height: 250px;
+  }
+}
+
+.filme-card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.filme-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.filme-card .card-body {
+  background-color: #fff;
+}
+
+.filme-card .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.filme-card .card-text {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+  margin-bottom: 1rem;
+}
+
+.filme-card .btn-primary {
+  background-color: #ff0000;
+  border-color: #ffffff;
+  text-decoration: bold;
+}
+
+.filme-card .btn-primary:hover {
+  background-color: #c02424;
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .filme-card img {
+    height: 200px;
+  }
+
+  .filme-card .card-title {
+    font-size: 1rem;
+  }
+
+  .filme-card .card-text {
+    font-size: 0.8rem;
+  }
+}
+.categoria-pills {
+  background-color: #ff0000;
+}
+
+.categoria-pills .nav-link {
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 20px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.categoria-pills .nav-link.active {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.categoria-pills .nav-link:hover:not(.active) {
+  background-color: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .categoria-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .categoria-pills .nav-link {
+    white-space: nowrap;
+  }
+}
