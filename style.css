@@ -195,6 +195,15 @@
   }
 }
 
+/* ...existing code... */
+@media (max-width: 768px) {
+  .card-img-top {
+    width: 100%;
+    height: auto !important;
+    object-fit: cover;
+  }
+}
+
 .filme-card {
   transition: transform 0.3s ease;
   border: none;
